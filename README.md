@@ -1,2 +1,2 @@
-# tg-slider
-jQuery pulgin for image slider
+# TG-Slider
+jQuery plugin for image slider
