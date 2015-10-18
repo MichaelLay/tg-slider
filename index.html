@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TG Slider - a Super light weight jQuery plugin for image slider</title>
+
+        <link rel="stylesheet" href="css/pure.css">
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/grids-responsive.css">
+        <!--<![endif]-->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/tg-slider.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/prettify.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Pretty print javaScript file -->
+        <script type="text/javascript" src="js/prettify.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="tg-menu" class="tg-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-2 tg-title">
+                        <a href="#" class="pure-menu-heading pure-menu-link">TGSlider</a>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-2">
+                        <ul id="tg-menu-item" class="pure-menu-list">
+                            <li class="pure-menu-item">
+                                <a href="#how-to" class="pure-menu-link">How to</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="#help" class="pure-menu-link">Contact</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="https://github.com/MichaelLay/tg-slider/archive/master.zip" class="pure-menu-link"><span class="active">Download</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu">
+                <div class="pure-u-1 visible-mobile"></div>
+            </div>
+        </header>
+        <div id="content-wrapper">
+            <div class="pure-g">
+                <div id="tg-slider-wrapper" class="pure-u-1">
+                    <ul class="tg-slider">
+                        <li>
+                            <img src="images/slide1.jpg" alt="" title=""/>
+                        </li>
+                        <li>
+                            <img src="images/slide2.jpg" alt="" title=""/>
+                        </li>
+                        <li>
+                            <img src="images/slide3.jpg" alt="" title=""/>
+                        </li>
+                    </ul>
+                    <ul id="tg-nav">
+                        <li>
+                            <a class="tg-nav prev"><i class="fa fa-angle-left"> </i></a>
+                        </li>
+                        <li class="align-right">
+                            <a class="tg-nav next"><i class="fa fa-angle-right"> </i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="content">
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>Easy Setup</h2>
+                        <i class="fa fa-birthday-cake"> </i>
+                        <p>
+                            TG Slider is very easy to use. Just setup your HTML and a few lines of javaScript.
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>Slick CSS3 Transition</h2>
+                        <i class="fa fa-css3"> </i>
+                        <p>
+                            Built with slick CSS3 transitions from <a href="http://daneden.me/animate" target="_blank">Danial Eden</a>
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>Browser Support</h2>
+                        <i class="fa fa-internet-explorer"> </i>
+                        <p>
+                            All modern browsers are supported
+                            <ul id="browser-support">
+                                <li>
+                                    <i class="fa fa-chrome"> </i>
+                                    <br>
+                                    26+
+                                </li>
+                                <li>
+                                    <i class="fa fa-internet-explorer"> </i>
+                                    <br>
+                                    10+
+                                </li>
+                                <li>
+                                    <i class="fa fa-firefox"> </i>
+                                    <br>
+                                    16+
+                                </li>
+                                <li>
+                                    <i class="fa fa-safari"> </i>
+                                    <br>
+                                    6+
+                                </li>
+                                <li>
+                                    <i class="fa fa-opera"> </i>
+                                    <br>
+                                    12+
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>Super Light Weight</h2>
+                        <i class="fa fa-bolt"> </i>
+                        <p>
+                            The script size is only 4KB!
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>MIT License</h2>
+                        <i class="fa fa-file-code-o"> </i>
+                        <p>
+                            Code licensed under <a href="http://opensource.org/licenses/mit-license.html" target="_blank">MIT License</a>
+                        </p>
+                    </div>
+                    <div class="pure-u-1 pure-u-md-1-3">
+                        <h2>Download</h2>
+                        <i class="fa fa-download"> </i>
+                        <p>
+                            Want to use it ? Just click this <a href="">link</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="how-to">
+                <div class="pure-g">
+                    <article class="pure-u-1">
+                        <h1>How to use</h1>
+                        <h2>1. Load jQuery and include TG Slider plugin files</h2>
+                        <pre class="prettyprint linenums">
+&lt;!-- TG Slider stylesheet --&gt;
+&lt;link type="text/css" rel="stylesheet" href="owl-carousel/tg-slider.css"&gt;
+&lt;!--  jQuery --&gt;
+&lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&gt;
+&lt;!-- TG Slider script --&gt;
+&lt;script type="text/javascript" src="tg-slider.js"&gt;&lt;/script&gt;
+</pre>
+                    </article>
+                </div>
+                <div class="pure-g">
+                    <article class="pure-u-1">
+                        <h2>2. Setup your HTML</h2>
+                        <p>Need to be exactly like this:</p>
+                        <pre class="prettyprint linenums">
+&lt;div id="tg-slider-wrapper"&gt;
+    &lt;ul class="tg-slider"&gt;
+        &lt;li&gt;
+            &lt;img src="Path to your image" alt="" title=""/&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="Path to your image" alt="" title=""/&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;img src="Path to your image" alt="" title=""/&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+                    </article>
+                </div>
+                <div class="pure-g">
+                    <article class="pure-u-1">
+                        <h2>3. Call TG Slider plugin</h2>
+                        <pre class="prettyprint linenums">
+$(document).ready(function() {
+    $("ul.tg-slider").tgSlider();
+});
+</pre>
+                    </article>
+                </div>
+                <div class="pure-g">
+                    <article class="pure-u-1">
+                        <h2>4. Set options</h2>
+                        <pre class="prettyprint linenums">
+$(document).ready(function() {
+    $("ul.tg-slider").tgSlider({
+        speed: 1000, // Slide speed, default 3000
+        height: 600, // Set slider container height, default 600
+    });
+});
+</pre>
+                    </article>
+                </div>
+            </section>
+            <section id="help">
+                <div class="pure-g">
+                    <div class="pure-u-1">
+                        <h1>Need Help ?</h1>
+                        <p>
+                            <i class="fa fa-twitter tweet-icon"> </i> Tweet Me <a href="https://twitter.com/amichaellay">@aMichaelLay</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <p>
+                        &copy; Michael Lay 2015 - <a href="http://opensource.org/licenses/mit-license.html" target="_blank">MIT License</a> - Images from <a href="http://unsplash.com" target="_blank">Unsplash</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/tg-slider.js"></script>
+        <script type="text/javascript">
+            $("ul.tg-slider").tgSlider();
+            $(window).on('resize orientationchange load', function(e) {
+                var htmlMenu = '<a href="#"><i class="fa fa-navicon"> </i></a><ul id="mobile-menu-item">';
+                $('#mobile-menu').html(htmlMenu + $('#tg-menu-item').html() + '<ul>');
+                $('#mobile-menu > a').on('click', function() {
+                    $('#mobile-menu-item').slideToggle();
+                });
+            });
+            $(function(){
+                window.prettyPrint && prettyPrint();
+            }(window.jQuery));
+        </script>
+    </body>
+</html>
+
