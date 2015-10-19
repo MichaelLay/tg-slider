@@ -17,8 +17,7 @@ body {
   background: #ffffff;
 }
 .tg-menu a {
-  line-height: 40pt;
-  color#666;
+  line-height: 40pt;color#666;
 }
 .tg-menu .pure-menu-list a:hover, .tg-menu a:hover {
   background: none;
@@ -26,7 +25,18 @@ body {
 .tg-menu .pure-menu-list a:hover {
   color: #ff0000;
 }
-/*About Me*/
+#brand-image {
+  background-color: #666;
+  color: #fff;
+  margin-bottom: 3em;
+  text-align: center;
+}
+#brand-image > h1 {
+  font-weight: 100;
+  margin-top: 3%;
+  position: absolute;
+  width: 100%;
+}
 .active {
   background-color: #FF0000;
   color: #FFFFFF;
@@ -70,10 +80,13 @@ body {
   text-decoration: none;
   border-bottom: dotted 1px #666666;
 }
+#demo {
+  margin-top: 5em;
+}
 #how-to {
   text-align: left;
 }
-#how-to > div, #help > div {
+#how-to > div, #help > div, #demo > div {
   width: 80%;
   margin: 0 auto;
 }
@@ -117,22 +130,20 @@ ul#browser-support > li > i {
   margin-bottom: 5px;
 }
 #tg-slider-wrapper {
-  margin-bottom: 20pt;
+  margin-bottom: 3em;
 }
 /*Responsive class*/
-.visible-mobile, #mobile-menu-item, #mobile-menu{
+.visible-mobile, #mobile-menu-item, #mobile-menu {
   display: none;
 }
 /*Mobile Menu*/
-@media screen and (max-width: 35.5em){
+@media screen and (max-width: 35.5em) {
   #mobile-menu {
     display: block;
     text-align: center;
-
-  padding-bottom: 20pt;
-  position: relative;
-  top: 65pt;
-
+    padding-bottom: 20pt;
+    position: relative;
+    top: 65pt;
   }
   #mobile-menu a {
     color: #666;
