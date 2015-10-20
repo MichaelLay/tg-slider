@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div id="mobile-menu">
-                <div class="pure-u-1 visible-mobile"></div>
+                <div class="pure-u-1 visible-mobile"> </div>
             </div>
         </header>
         <div id="content-wrapper">
@@ -256,13 +256,13 @@ $(document).ready(function() {
         <script type="text/javascript" src="js/tg-slider.js"></script>
         <script type="text/javascript">
             $("ul.tg-slider").tgSlider();
-            $(window).on('resize orientationchange pagecontainerload', function(e) {
-                var htmlMenu = '<a href="#"><i class="fa fa-navicon"> </i></a><ul id="mobile-menu-item">';
-                $('#mobile-menu').html(htmlMenu + $('#tg-menu-item').html() + '<ul>');
-                $('#mobile-menu > a').on('click', function() {
-                    $('#mobile-menu-item').slideToggle();
-                });
+            // Mobile Menu
+            var htmlMenu = '<a href="#"><i class="fa fa-navicon"> </i></a><ul id="mobile-menu-item">';
+            $('#mobile-menu').html(htmlMenu + $('#tg-menu-item').html() + '<ul>');
+            $('#mobile-menu > a').on('click', function() {
+                $('#mobile-menu-item').slideToggle();
             });
+
             $( function() {
                 window.prettyPrint && prettyPrint();
             }(window.jQuery));

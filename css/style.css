@@ -137,7 +137,7 @@ ul#browser-support > li > i {
   display: none;
 }
 /*Mobile Menu*/
-@media screen and (max-width: 35.5em) {
+@media screen and (max-width: 767px) {
   #mobile-menu {
     display: block;
     text-align: center;
